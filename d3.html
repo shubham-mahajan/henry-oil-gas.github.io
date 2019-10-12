@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>D3 Graph Henry Oil Gas</title>
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="charts.js"></script>
+  </head>
+  <body
+    onload='chart("https://raw.githubusercontent.com/shubham-mahajan/henry-gas-price/master/data/henry_hub_gas_daily_price.csv")'
+  >
+    <select onchange="chart(value)">
+      <option
+        value="https://raw.githubusercontent.com/shubham-mahajan/henry-gas-price/master/data/henry_hub_gas_daily_price.csv"
+        >Daily</option
+      >
+      <option
+        value="https://raw.githubusercontent.com/shubham-mahajan/henry-gas-price/master/data/henry_hub_gas_monthly_price.csv"
+        >Monthly</option
+      >
+    </select>
+    <div id="d3Chart"></div>
+  </body>
+</html>
